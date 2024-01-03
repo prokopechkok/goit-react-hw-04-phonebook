@@ -33,7 +33,7 @@ export const App = () => {
   const handleAddedContact = formData => {
     const hasDuplicates = contacts.some(
       contact =>
-        contact.name.toLowerCase() === formData.name.toLowerCase() &&
+        contact.name.toLowerCase() === formData.name.toLowerCase() ||
         contact.number === formData.number
     );
 
